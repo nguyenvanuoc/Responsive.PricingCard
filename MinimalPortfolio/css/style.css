@@ -1,0 +1,84 @@
+/*Reset*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px; }
+
+/*Body*/
+body, html {
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+  height: 100%; }
+
+/*Portfolio Style*/
+.portfolio-wrapper {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .portfolio-wrapper .box-form {
+    max-width: 1320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    align-items: center; }
+    .portfolio-wrapper .box-form .box-col {
+      width: calc(50% - 60px); }
+  .portfolio-wrapper .user-img img {
+    max-width: 100%; }
+  .portfolio-wrapper .user-info .wel {
+    font-size: 2rem;
+    margin-bottom: 0.5rem; }
+  .portfolio-wrapper .user-info .pos {
+    font-size: 1rem; }
+  .portfolio-wrapper .user-info .actions {
+    margin-top: 1rem; }
+    .portfolio-wrapper .user-info .actions .btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+      background: #000000;
+      box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      color: #fff;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer; }
+      .portfolio-wrapper .user-info .actions .btn:hover {
+        background: #222; }
+  .portfolio-wrapper .user-info .social {
+    margin-top: 3rem; }
+    .portfolio-wrapper .user-info .social a {
+      width: 1.333rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 0.5rem;
+      transition: all 0.3s ease; }
+      .portfolio-wrapper .user-info .social a img {
+        width: 1.333rem;
+        height: 1.333rem;
+        object-fit: contain; }
+      .portfolio-wrapper .user-info .social a:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease; }
+
+/*Responsive */
+@media (max-width: 991px) {
+  html {
+    font-size: 18px; }
+  .portfolio-wrapper .box-form .box-col {
+    width: calc(50% - 20px); } }
+
+/*Responsive screen < 480px */
+@media (max-width: 480px) {
+  .portfolio-wrapper {
+    display: block; }
+    .portfolio-wrapper .box-form {
+      display: block;
+      padding: 20px 30px; }
+      .portfolio-wrapper .box-form .box-col {
+        width: 100%;
+        display: block; }
+    .portfolio-wrapper .user-info {
+      margin-bottom: 2rem; } }
